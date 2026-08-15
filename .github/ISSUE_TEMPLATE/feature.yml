@@ -1,0 +1,55 @@
+name: Feature request
+description: Propose a user, product, or business outcome
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: Describe the problem and required outcome; a technical design is not required.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or business need
+      description: Who is affected, what problem exists, and why does it matter?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Proposed outcome
+      description: Describe the capability or outcome needed without prescribing implementation.
+    validations:
+      required: true
+  - type: input
+    id: component
+    attributes:
+      label: Affected repository or component
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: List observable conditions that would make this request complete.
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: textarea
+    id: security
+    attributes:
+      label: Security impact
+      description: Note authentication, authorization, privacy, financial, or other security considerations.
+  - type: textarea
+    id: configuration
+    attributes:
+      label: Configuration or environment impact
+  - type: textarea
+    id: api_data
+    attributes:
+      label: API or data impact
+      description: Note known contract, schema, migration, compatibility, or data-handling considerations.
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context

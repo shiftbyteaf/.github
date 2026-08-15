@@ -1,0 +1,57 @@
+name: Technical task
+description: Track upgrades, refactors, CI/CD, infrastructure, maintenance, security hardening, or technical debt
+title: "[Task]: "
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What technical outcome must be achieved?
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason
+      description: Why is this work needed now?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Define what is included and, where useful, what is excluded.
+    validations:
+      required: true
+  - type: input
+    id: component
+    attributes:
+      label: Affected repository or component
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation
+      description: Describe the tests, checks, or evidence required to confirm completion.
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks and dependencies
+      description: Include security, compatibility, sequencing, rollback, and external dependencies where relevant.
+  - type: textarea
+    id: documentation
+    attributes:
+      label: Documentation impact
+      description: Identify documentation that must be added or updated, or explain why none is needed.

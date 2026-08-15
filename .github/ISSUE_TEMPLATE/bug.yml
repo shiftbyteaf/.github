@@ -1,0 +1,73 @@
+name: Bug report
+description: Report reproducible incorrect or unexpected behavior
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Do not paste credentials, secrets, production customer data, OTPs, banking
+        information, or other sensitive material. Use an approved private channel
+        for security vulnerabilities.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What is wrong, and when did you first observe it?
+    validations:
+      required: true
+  - type: input
+    id: component
+    attributes:
+      label: Affected repository or component
+      placeholder: Repository, service, application, or module
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Include the relevant environment, build, version, device, or browser.
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest reliable sequence that demonstrates the problem.
+      placeholder: |
+        1. Go to ...
+        2. Perform ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence, logs, or screenshots
+      description: Redact all sensitive information before attaching evidence.
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity or impact
+      options:
+        - Low — limited inconvenience or cosmetic issue
+        - Medium — degraded behavior with a workaround
+        - High — major function unavailable or materially incorrect
+        - Critical — severe security, financial, or availability impact
+        - Unknown — needs assessment
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
